@@ -1,0 +1,99 @@
+.header{
+    display: flex;
+    height: 88px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 100;
+    
+}
+
+.left-side{
+    width: 560px;
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.home-button{
+    border-width: 0px;
+    height: 88px;
+    width: 160px;
+    background-color: white;
+    display: inline;    
+
+}
+
+.atom-logo{
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-button{
+    border-width: 0px;
+    height: 48px;
+    width: 110px;
+    background-color: white;
+    font-size: 16px;
+    display: inline-block;
+    font-family: Georgia;
+    font-weight: 700;
+
+
+
+}
+
+
+.research-button{
+    border-width: 0px;
+    height: 48px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    
+
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 16px;
+
+
+}
+
+
+.home-button:hover, .about-button, 
+.project-button, .research-button{
+    cursor: pointer;
+
+}
+
+
+.right-side{
+
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.about-button{
+    border-width: 0px;
+    height: 48px;
+    width: 100px;
+
+    background-color: white;
+
+    font-family: Georgia;
+    font-weight: 700;
+    font-size: 16px
+
+}
