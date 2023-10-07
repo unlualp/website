@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none !important;
+
 
 }
 
@@ -105,7 +105,7 @@
 }
 
 .mobile-bar{
-    display: none;
+    display: none !important;
     align-items: center;
 
 
@@ -116,11 +116,11 @@
     font-size: 50px;
     padding: 10px 20px 10px 20px;
     cursor: pointer;
-    display: none;
+    display: none !important;
 }
 
 #menu-bar{
-    display: none;
+    display: none !important;
 }
 
 .header .mobile-bar ul li{
