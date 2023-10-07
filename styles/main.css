@@ -1,0 +1,132 @@
+.main-page{
+    display: flex;
+    margin: 40px 100px 0px 100px;
+}
+
+.main-left{
+
+    flex: 1;
+
+    height: 100%;
+    margin-right: 120px;
+
+    font-size: 24px;
+    font-family: Georgia;
+}
+
+
+
+.text-info{
+    font-size: 24px;
+
+
+}
+
+
+
+.main-welcome{
+    position: relative;
+}
+
+.main-welcome .welcome-heading{
+    position: absolute;
+    left: 4%;
+    top: 50%;
+}
+
+.welcome-heading{
+    font-size: 64px;
+    color: white;
+
+
+    font-family: Georgia;
+    font-weight: 700;
+
+
+}
+
+
+.mars-image{
+    width: 100%;
+    
+
+}
+
+.main-right{
+    display: grid;
+    justify-content: center;
+    height: 100%;
+
+    font-size: 24px;
+
+}
+
+
+.profile-photo{
+    margin-top: 100,işlopx;
+    height: 400px;
+    border-radius: 20px;
+
+}
+
+.photo-text{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .profile-photo{
+        height: 180px;
+        border-radius: 5px;
+        
+    }
+
+    .main-page{
+        display: flex;
+        margin-top: 16px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+    
+    .welcome-heading{
+        font-size: 32px;
+    }
+
+    .main-left{
+        font-size: 16px;
+        margin-right: 24px;
+
+    }
+
+    .photo-text{
+        font-size: 12px;
+    }
+
+    .main-right{
+        margin-top: 100px;
+    }
+    .mars-image{
+
+        height: 800px;
+        display: none;
+        
+    
+    }
+    body, html{
+        height: 100%;
+    }
+    .main-welcome{
+        height: 93%;
+        background-size: cover;
+        background-image: url("../images/mars.png");
+
+    }
+
+    .main-welcome .welcome-heading{
+
+
+        top: 60%;
+    }
+}
