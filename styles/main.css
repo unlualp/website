@@ -75,7 +75,7 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     .profile-photo{
         height: 180px;
         border-radius: 5px;
