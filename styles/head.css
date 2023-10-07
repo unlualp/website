@@ -19,6 +19,8 @@
     align-items: center;
 
 
+
+
 }
 
 .home-button{
@@ -27,6 +29,8 @@
     width: 160px;
     background-color: white;
     display: inline;    
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -45,6 +49,7 @@
     display: inline-block;
     font-family: Georgia;
     font-weight: 700;
+    
 
 
 
@@ -80,6 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: red;
 
 }
 
@@ -96,4 +102,107 @@
     font-weight: 700;
     font-size: 16px
 
+}
+
+.mobile-bar{
+    display: none;
+    align-items: center;
+
+
+}
+
+
+.header label{
+    font-size: 50px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-bar{
+    display: none;
+}
+
+.header .mobile-bar ul li{
+    position: relative;
+    float: left;
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .header, .left-side{
+        height: 80px;
+        
+    }
+
+    .home-button{
+        height: 80px;
+        width: 140px;
+
+
+    }
+    .atom-logo{
+        height: 56px;
+    }
+
+    .right-side{
+        width: 400px;
+        display: none;
+ 
+    
+    }
+    .project-button, .research-button, .about-button{
+        display: none;
+    
+    }
+    
+    *{
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    .header .mobile-bar{
+        text-decoration: none;
+        height: 50%;
+        width: 100%;
+        justify-content: end;
+        padding-right: 10px;
+        display: none;
+
+
+    }
+
+    .header .mobile-bar ul{
+        list-style: none;
+        padding: 0;
+
+
+
+    }
+    
+
+    .header .mobile-bar ul li a{
+        margin-left: 20px;
+        padding: 11px 4px 11px 4px;
+        color: black;
+        font-family: Georgia;
+
+    }
+    .header label{
+        display: initial;
+    }
+
+    .header .mobile-bar{
+        position: absolute;
+        top: 100%;
+
+        right: 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        background: white;
+
+    }
+
+    #menu-bar:checked ~ .mobile-bar{
+        display: flex;
+    }
 }

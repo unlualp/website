@@ -6,7 +6,7 @@
     background-image: url("../images/nasahubble2.png");
     height: 180px;
     margin-top: 40px;
-
+    bottom: 0px;
 
 
 
@@ -39,4 +39,30 @@
 {
     cursor: pointer;
 
+}
+
+@media only screen and (max-width: 500px) {
+    .insta-logo{
+        height: 20px;
+        margin-left: 20px;
+    }
+    
+    .linkedin-logo{
+        height: 20px;
+        
+    }
+    .footer-class{
+
+        height: 100px;
+        margin-top: 40px;
+    
+    }
+    .image-overlay{
+
+        height: 100px;
+
+    }
+    .contact{
+        font-size: 10px;
+    }
 }
