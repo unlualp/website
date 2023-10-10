@@ -8,6 +8,7 @@
     justify-content: space-between;
     background-color: white;
     z-index: 100;
+
     
 }
 
@@ -106,9 +107,10 @@
 
 .mobile-bar{
     display: none;
-    align-items: center;
+    
 
 
+    height: 100%;
 }
 
 
@@ -147,7 +149,6 @@
     }
 
     .right-side{
-        width: 400px;
         display: none;
  
     
@@ -161,13 +162,20 @@
         text-decoration: none;
         box-sizing: border-box;
     }
+
+    .mobile-bar{
+        height: 120px;
+
+    }
     .header .mobile-bar{
         text-decoration: none;
-        height: 50%;
-        width: 100%;
-        justify-content: end;
-        padding-right: 10px;
+
+        align-items: center;
+        justify-content: start;
+        padding: 0;
         display: none;
+        background-color: white;
+
 
 
     }
@@ -175,34 +183,58 @@
     .header .mobile-bar ul{
         list-style: none;
         padding: 0;
+        display: block;
+        flex: 1;
+        
+
+
+
+
+    }
+
+    .header .mobile-bar ul li{
+        width: 100%;
+
 
 
 
     }
     
+    li{
+        display: flex;
+    }
 
     .header .mobile-bar ul li a{
-        margin-left: 20px;
-        padding: 11px 4px 11px 4px;
+        flex: 1;
+        padding: 11px 10px 11px 10px;
         color: black;
         font-family: Georgia;
+
+        display: block;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        
+
 
     }
     .header label{
         display: initial;
+
     }
 
     .header .mobile-bar{
         position: absolute;
         top: 100%;
-
+        width: 100%;
         right: 0;
-        border-top: 1px solid rgba(0,0,0,0.1);
-        background: white;
+
+
+
+
 
     }
 
     #menu-bar:checked ~ .mobile-bar{
         display: flex;
+
     }
 }
