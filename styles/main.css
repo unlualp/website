@@ -1,6 +1,8 @@
 .main-page{
     display: flex;
     margin: 40px 100px 0px 100px;
+
+
 }
 
 .main-left{
@@ -24,10 +26,6 @@
 
 
 
-.main-welcome{
-    position: relative;
-}
-
 .main-welcome .welcome-heading{
     position: absolute;
     left: 4%;
@@ -48,7 +46,10 @@
 
 .mars-image{
     width: 100%;
-    
+
+}
+
+.main-welcome{
 
 }
 
@@ -92,6 +93,7 @@
     
     .welcome-heading{
         font-size: 32px;
+
     }
 
     .main-left{
@@ -121,8 +123,8 @@
         height: 93%;
         background-size: cover;
         background-image:  linear-gradient(to bottom, rgba(0,0,0,0), rgba(0, 0, 0, 0.8)), url("../images/mars.png");
-        background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(117, 19, 93, 0.73)),
+        
+
 
 
     }

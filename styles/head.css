@@ -12,7 +12,7 @@
     
 }
 
-.left-side{
+.left-side {
     width: 560px;
     display: flex;
     height: 88px;
@@ -20,16 +20,13 @@
     align-items: center;
 
 
-
-
 }
 
 .home-button{
-    border-width: 0px;
-    height: 88px;
-    width: 160px;
+    padding: 0 40px 0 40px;
+    height: 100%;
     background-color: white;
-    display: inline;    
+    display: flex;    
     align-items: center;
     justify-content: center;
 
@@ -41,18 +38,19 @@
     align-items: center;
 }
 
+
+
 .project-button{
-    border-width: 0px;
-    height: 48px;
-    width: 110px;
+    text-decoration: none;
     background-color: white;
     font-size: 16px;
-    display: inline-block;
     font-family: Georgia;
     font-weight: 700;
+    color: black;
+    padding: 35px 0 35px 0;
+
+
     
-
-
 
 }
 
