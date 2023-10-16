@@ -36,9 +36,15 @@
     height: 72px;
     justify-content: center;
     align-items: center;
+
+    border-radius: 50%;
+    animation: rotate linear 18s infinite forwards;
+    animation-play-state: paused;
 }
 
-
+.atom-logo:hover{
+    animation-play-state: running;
+}
 
 .project-button{
     text-decoration: none;
@@ -234,5 +240,13 @@
     #menu-bar:checked ~ .mobile-bar{
         display: flex;
 
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
     }
 }
