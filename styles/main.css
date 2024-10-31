@@ -95,6 +95,20 @@
 text-decoration: underline; 
 }
   
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Adjusts spacing between videos */
+}
+.video-container {
+    text-align: center; /* Centers the video and note */
+}
+.video-note {
+    font-style: italic;
+    color: gray;
+    margin-top: 8px;
+}
 @media only screen and (max-width: 800px) {
     .profile-photo{
         height: 180px;

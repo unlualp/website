@@ -56,12 +56,58 @@
     <div class="main-page">
         <div class="main-left">
             <h1>Bio-inspired Swimming Robot</h1>
+            <p>In the lab, I built a robot to study how fixed-position bacteria move the fluid around them. We designed this robot using a bead system to analyze this phenomenon. The robot consists of three main parts: the body and two arms. The body and arms are connected by servos, allowing the arms to move radially.</p>
+            <p>I applied cosine signals to the servos, with one of the servos offset by a phase angle. When the phase angle was set to 0°, both servos moved in sync with the cosine signal, and we observed no movement in the beads. Similarly, at a phase angle of 180°, there was still no movement in the beads.</p>
+            <p>However, when I set the phase angle to 90°, I observed directional movement in the beads. Furthermore, when I set the phase angle to -90°, the beads moved in the opposite direction compared to the +90° phase angle.</p>
             
+        
         </div>
 
         <div class="main-right">
 
        
+        </div>
+        
+    </div>
+    <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-container">
+            <video width="480" height="320" controls>
+                <source src="../videos/bpart1.mp4" type="video/mp4">
+             
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-note">At 90 degrees, the beads are moving to the left.</div>
+        </div>
+    
+        <!-- Video 2 -->
+        <div class="video-container">
+            <video width="480" height="320" controls>
+                <source src="../videos/gpart3.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-note">At 0 degrees, the beads remain stationary.</div>
+        </div>
+    
+        <!-- Video 3 -->
+        <div class="video-container">
+            <video width="480" height="320" controls>
+                <source src="../videos/rpart2.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-note">At -90 degrees, the beads are moving to the right.</div>
+        </div>
+    
+        <!-- Video 4 -->
+        <div class="video-container">
+            <video width="480" height="320" controls>
+                <source src="../videos/gpart4.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-note">At 180 degrees, the beads are also stationary.</div>
         </div>
     </div>
 
