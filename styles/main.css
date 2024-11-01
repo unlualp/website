@@ -10,12 +10,14 @@
     flex: 1;
 
     height: 100%;
-    margin-right: 120px;
+
     font-size: 24px;
     font-family: Georgia;
 }
 
-
+.main-middle{
+    margin-right: 120px;
+}
 
 .text-info{
     font-size: 16px;
@@ -99,7 +101,7 @@ text-decoration: underline;
 .video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Default layout: 2x2 */
-    gap: 20px; /* Space between video containers */
+    gap: 40px; /* Space between video containers */
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -114,6 +116,42 @@ video {
     font-style: italic;
     color: gray;
     margin-top: 8px;
+}
+
+/* Grid layout for images */
+.image-grid {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items in the row */
+    align-items: stretch; /* Make all items the same height */
+    gap: 80px; /* Space between images */
+    max-width: 1200px; /* Max width for the grid */
+    margin: 0 auto; /* Center the grid */
+    margin-top: 60px;
+}
+
+/* Image and text container */
+.image-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    text-align: center; /* Center text */
+
+    width: 300px; /* Fixed width for uniformity */
+}
+
+/* Center the image */
+.image-container img {
+    width: 100%; /* Make image responsive to container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire area of the container */
+}
+
+/* Text styling */
+.image-text {
+    padding: 10px; /* Space between text and image */
+    font-size: 16px; /* Font size for text */
+    font-family: Arial, sans-serif; /* Font family for text */
 }
 
 
@@ -132,7 +170,9 @@ video {
         text-decoration: none;
 
     }
-    
+    .main-middle{
+        margin-right: 40px;
+    }
     .welcome-heading{
         font-size: 32px;
 
@@ -149,7 +189,7 @@ video {
     }
 
     .main-right{
-        margin-top: 100px;
+        margin-top: 40px;
     }
     .mars-image{
 
@@ -186,6 +226,15 @@ video {
         grid-template-columns: 1fr; /* 4x1 layout for small screens */
     }
     
+    .image-grid {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .image-container {
+        width: 80%; /* Make containers full width */
+        max-width: 500px; /* Optional: limit max width for mobile */
+    }
 
       
 
