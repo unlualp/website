@@ -98,17 +98,25 @@ text-decoration: underline;
 
 .video-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Adjusts spacing between videos */
+    grid-template-columns: 1fr 1fr; /* Default layout: 2x2 */
+    gap: 20px; /* Space between video containers */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .video-container {
-    text-align: center; /* Centers the video and note */
+    text-align: center;
+}
+video {
+    width: 100%; /* Video adjusts to container width */
+    height: auto; /* Maintains aspect ratio */
 }
 .video-note {
     font-style: italic;
     color: gray;
     margin-top: 8px;
 }
+
+
 @media only screen and (max-width: 800px) {
     .profile-photo{
         height: 180px;
@@ -174,6 +182,9 @@ text-decoration: underline;
     text-decoration: underline; 
     }
 
+    .video-grid {
+        grid-template-columns: 1fr; /* 4x1 layout for small screens */
+    }
     
 
       
