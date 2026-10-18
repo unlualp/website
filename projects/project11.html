@@ -37,7 +37,7 @@
         <div class="prose">
             <p>Our lab's multiphoton microscope runs on a Coherent Chameleon laser. It stopped working properly because the piezos inside the laser were no longer being driven, and without them the laser cannot hold its operating state.</p>
             <p>I took the control board out, photographed both sides and stitched the photos into high-resolution scans so I could follow the traces. All four piezo outputs read about −3 V instead of the roughly +80 V they should supply, which pointed to a part shared by all four channels rather than four separate failures.</p>
-            <p>Following the circuit back, I identified the faulty part myself: the LM324AM op-amp that feeds all four high-voltage amplifier inputs. I removed it with a hot-air gun and soldered a new one in its place, and the piezos work again.</p>
+            <p>Following the circuit back, I identified the faulty part myself: the LM324AM op-amp that feeds all four high-voltage amplifier inputs. I removed it with a hot-air gun and soldered a new LM324AM in its place, and the piezos work again.</p>
         </div>
     </article>
     <div class="gallery two">
