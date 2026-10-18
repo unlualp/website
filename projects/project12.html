@@ -35,16 +35,16 @@
         <p class="summary">A tool head for an automated C. elegans picker that feels the moment it touches the agar.</p>
         <ul class="tags"><li>CAD</li><li>Flexures</li><li>Strain gauges</li><li>3D printing</li></ul>
         <div class="prose">
-            <p>Picking C. elegans by hand means lowering a tiny loop onto soft agar without digging into it. For an automated picker, the machine has to know the exact moment the loop touches the surface, so the motor can stop right away.</p>
-            <p>I designed a tool head that carries a plastic inoculating loop on a 3D-printed flexure with strain gauges glued to it. When the loop touches the agar the flexure bends very slightly, the gauges pick that up, and the picker stops moving down. The loop sits at an adjustable angle and can be swapped without tools.</p>
-            <p>Along with the CAD model I worked through the mechanics: how stiff the flexure should be, how much the long shaft sags and vibrates, and how much signal the gauges give for a few millinewtons of force. The design is complete, but it has not been built and tested yet.</p>
+            <p>Picking C. elegans means lowering a tiny loop onto soft agar without digging into it. For an automated picker, the machine has to know the exact moment the loop touches the surface, so the motor can stop right away.</p>
+            <p>The heart of the design is a 3D-printed double-blade flexure: two thin blades join a fixed block and a moving block in a single print. When the loop touches the agar, the moving block shifts straight up without tilting, so the reading is the same whatever the loop angle or wherever the tip touches. Two strain gauges on the same blade form a half-bridge that cancels temperature drift.</p>
+            <p>The loop sits in a carrier at an adjustable angle of 20–50° and can be swapped in seconds while its tip returns to the same position. Alongside the CAD model I worked through the mechanics, signal and noise; the estimates put the touch threshold below one millinewton. The design is complete, but it has not been built and tested yet.</p>
         </div>
     </article>
     <div class="gallery two">
-        <figure><img src="../images/3d/worm-picker-iso.jpg" alt="The assembled tool head." loading="lazy"><figcaption>The assembled tool head.</figcaption></figure>
-        <figure><img src="../images/3d/worm-picker-exploded.jpg" alt="Exploded view of the parts." loading="lazy"><figcaption>Exploded view of the parts.</figcaption></figure>
-        <figure><img src="../images/3d/worm-picker-tip.jpg" alt="The loop tip meeting the agar surface." loading="lazy"><figcaption>The loop tip meeting the agar surface.</figcaption></figure>
-        <figure><img src="../images/3d/worm-picker-analysis.jpg" alt="Estimates of flexure movement and gauge signal." loading="lazy"><figcaption>Estimates of flexure movement and gauge signal.</figcaption></figure>
+        <figure><img src="../images/3d/wp-iso.jpg" alt="The tool head above an agar plate." loading="lazy"><figcaption>The tool head above an agar plate.</figcaption></figure>
+        <figure><img src="../images/3d/wp-exploded.jpg" alt="Exploded view of the parts." loading="lazy"><figcaption>Exploded view of the parts.</figcaption></figure>
+        <figure><img src="../images/3d/wp-cartridge.jpg" alt="The flexure cartridge (orange) and the loop carrier (green)." loading="lazy"><figcaption>The flexure cartridge (orange) and the loop carrier (green).</figcaption></figure>
+        <figure><img src="../images/3d/wp-angle.jpg" alt="The double-blade flexure keeps the same calibration at every loop angle." loading="lazy"><figcaption>The double-blade flexure keeps the same calibration at every loop angle.</figcaption></figure>
     </div>
     </main>
     <footer class="site-footer">
