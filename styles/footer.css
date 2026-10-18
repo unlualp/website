@@ -45,7 +45,12 @@
     
 }
 
-.insta-logo:hover, .linkedin-logo
+.github-logo{
+    height: 48px;
+    margin-left: 20px;
+}
+
+.insta-logo:hover, .linkedin-logo, .github-logo
 {
     cursor: pointer;
 
@@ -60,6 +65,10 @@
     .linkedin-logo{
         height: 24px;
         
+    }
+    .github-logo{
+        height: 24px;
+        margin-left: 12px;
     }
     .footer-class{
 
