@@ -35,8 +35,8 @@
         <p class="summary">The stages of our laser microfabrication station stopped responding. I moved it to a new controller and brought it back to life.</p>
         <ul class="tags"><li>Motion control</li><li>Newport XPS</li><li>Troubleshooting</li><li>Lab hardware</li></ul>
         <div class="prose">
-            <p>Our lab's laser microfabrication station moves the sample under the laser on Newport motorised stages: two linear stages for X and Y, a vertical stage for Z, and a rotary attenuator that sets the laser power. A Newport XPS motion controller drives all of them and opens and closes the laser shutter.</p>
-            <p>The motors stopped responding to the controller. I moved the whole system over to a second XPS controller, connected each stage to the driver card it needs, and updated the drivers and configuration until the software could move the stages, the attenuator and the shutter again.</p>
+            <p>Our lab's laser microfabrication station moves the sample under the laser on Newport motorised stages: two linear stages for X and Y, a vertical stage for Z, and a rotary actuator axis (a PR50CC rotation stage) that turns the attenuator setting the laser power. A Newport XPS motion controller drives all four axes and opens and closes the laser shutter.</p>
+            <p>The motors stopped responding to the controller. I moved the whole system over to a second XPS controller, connected each stage to the driver card it needs, and updated the drivers and configuration until the software could drive the X, Y and Z stages, the rotary axis and the shutter again.</p>
             <p>To make the next repair easier, I backed up both controllers and every configuration version, and put together a small kit with check, backup and restore scripts and the known-good configuration.</p>
         </div>
     </article>
