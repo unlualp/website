@@ -62,7 +62,7 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0; }
     position: sticky;
     top: 0;
     z-index: 100;
-    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    background: var(--surface);
     backdrop-filter: saturate(180%) blur(12px);
     -webkit-backdrop-filter: saturate(180%) blur(12px);
     border-bottom: 1px solid var(--border);
@@ -129,7 +129,7 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0; }
         flex-direction: column;
         gap: 0;
         padding: 8px 16px 16px;
-        background: var(--bg);
+        background: var(--surface);
         border-bottom: 1px solid var(--border);
     }
     .nav a { padding: 12px; font-size: 16px; }
