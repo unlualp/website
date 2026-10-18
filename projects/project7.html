@@ -35,10 +35,14 @@
         <p class="summary">A servo, a temperature sensor and an ESP32 turn an ordinary heater into a scheduled, remote-controlled one.</p>
         <ul class="tags"><li>ESP32</li><li>IoT</li><li>MQTT</li></ul>
         <div class="prose">
-            <p>I wanted to control my heater remotely and on a schedule, without replacing it. So I attached a servo to the heater's valve and controlled it with an ESP32 and a temperature sensor.</p>
-            <p>The controller follows a weekly schedule and works as a simple thermostat, keeping the room above a minimum temperature. Mode, schedule and temperature can be changed from a small web page on my phone, from anywhere, and the ESP32 closes the valve on its own if it loses the connection.</p>
+            <p>I wanted to control my heater remotely and on a schedule, without replacing it. So I put a servo on the heater's control knob and drove it with an ESP32 and a temperature sensor.</p>
+            <p>The controller follows a weekly schedule and works as a simple thermostat, keeping the room above a minimum temperature. Mode, schedule and temperature can be changed from a small web page on my phone, from anywhere, and the ESP32 turns the heater down on its own if it loses the connection.</p>
+            <p>To hold the servo in place I designed a 3D-printed bracket that sits over the thermostat, with a cap that grips the dial.</p>
         </div>
     </article>
+    <div class="gallery">
+        <figure><img src="../images/3d/servo-mount.jpg" alt="The 3D-printed servo bracket and dial cap." loading="lazy"><figcaption>The 3D-printed servo bracket and dial cap.</figcaption></figure>
+    </div>
     </main>
     <footer class="site-footer">
         <div class="container">

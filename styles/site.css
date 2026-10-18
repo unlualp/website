@@ -386,3 +386,14 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0; }
 .card-media img[src$=".svg"] { object-fit: contain; background: #0f3d2a; padding: 18px; }
 .gallery img[src$=".svg"] { background: #0f3d2a; padding: 16px; }
 .gallery:not(.two) figure:only-child { grid-column: 1 / -1; }
+
+/* Uniform gallery tiles: photos fill, diagrams and plots stay whole */
+.gallery img { aspect-ratio: 4 / 3; object-fit: cover; }
+.gallery img[src$=".svg"],
+.gallery img[src*="circuit"],
+.gallery img[src*="board-scan"],
+.gallery img[src*="sims/"],
+.gallery img[src*="peltier-ui"],
+.gallery img[src*="3d/"] { object-fit: contain; background: #f4f4f2; }
+.gallery img[src$=".svg"] { background: #0f3d2a; }
+.card-media img[src*="3d/"] { object-fit: contain; background: #f4f4f2; padding: 12px; }

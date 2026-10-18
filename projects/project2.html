@@ -33,15 +33,17 @@
         <span class="eyebrow">Lab project · 2024</span>
         <h1>Localized Heater/Cooler for Agar Plates: Peltier temperature control</h1>
         <p class="summary">Heating or cooling specific spots on an agar plate with Peltier devices and a custom control app.</p>
-        <ul class="tags"><li>Arduino</li><li>Peltier</li><li>Python UI</li></ul>
+        <ul class="tags"><li>Arduino</li><li>Peltier</li><li>Python UI</li><li>Altium</li></ul>
         <div class="prose">
             <p>For our experiments we needed to heat or cool specific areas on agar plates, so we designed a system that uses Peltier devices as both heating and cooling sources.</p>
             <p>I built an Arduino circuit that switches the Peltier devices between modes and holds them at a set temperature, and a Python desktop app to manage the temperature regulation.</p>
+            <p>Later I designed a dedicated board for it in Altium Designer: a 300 × 200 mm PCB with four Peltier positions around a central plate area, with the connections for each one routed to a single header for the controller.</p>
         </div>
     </article>
-    <div class="gallery two">
+    <div class="gallery">
         <figure><img src="../images/thumbs/peltier-setup.jpg" alt="The Peltier setup." loading="lazy"><figcaption>The Peltier setup.</figcaption></figure>
         <figure><img src="../images/thumbs/peltier-ui.jpg" alt="The control app." loading="lazy"><figcaption>The control app.</figcaption></figure>
+        <figure><img src="../images/pcb/peltier.svg" alt="The Peltier board designed in Altium, rendered from its Gerber files." loading="lazy"><figcaption>The Peltier board designed in Altium, rendered from its Gerber files.</figcaption></figure>
     </div>
     </main>
     <footer class="site-footer">
