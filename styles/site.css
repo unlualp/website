@@ -408,3 +408,13 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0; }
 .gallery figure:has(img[src*="crack_notch"]) { grid-column: 1 / -1; }
 .gallery img[src*="crack_strip"],
 .gallery img[src*="crack_notch"] { aspect-ratio: auto; object-fit: contain; background: #fff; }
+
+/* Dark mode: frame light-background renders so they sit on the dark page */
+.card-media picture, .gallery picture { display: contents; }
+@media (prefers-color-scheme: dark) {
+    .card-media img[src*="3d/"], .gallery img[src*="3d/"] { background: #1e1e22; }
+    .card-media img[src*="fpga/"], .gallery img[src*="fpga/"] { background: #17171a; }
+    .gallery img[src*="web/"], .gallery img[src*="sims/"], .gallery img[src*="circuit"],
+    .gallery img[src*="board-scan"], .gallery img[src*="peltier-ui"],
+    .gallery img[src*="crack_"] { background: var(--surface-2); }
+}
