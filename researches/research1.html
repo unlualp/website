@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrested Phase Separation in C. elegans · Alp Ünlü</title>
-    <meta name="description" content="COMSOL simulations and linear stability analysis of how patterns form and stop growing.">
+    <meta name="description" content="Why groups of worms stop growing and settle into a regular pattern, seen from both the crowd and the individual.">
     <link rel="icon" href="../images/atomlogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,15 +30,20 @@
     <main>
     <article class="article">
         <a class="back" href="../researches.html">← All research</a>
-        <span class="eyebrow">Simulation · 2024</span>
-        <h1>Arrested Phase Separation in C. elegans: Pattern formation and stability</h1>
-        <p class="summary">COMSOL simulations and linear stability analysis of how patterns form and stop growing.</p>
-        <ul class="tags"><li>COMSOL</li><li>Linear stability</li><li>Pattern formation</li></ul>
+        <span class="eyebrow">Simulation · 2026</span>
+        <h1>Arrested Phase Separation in C. elegans: Two simulations of one pattern</h1>
+        <p class="summary">Why groups of worms stop growing and settle into a regular pattern, seen from both the crowd and the individual.</p>
+        <ul class="tags"><li>COMSOL</li><li>Particle simulation</li><li>Python</li><li>JAX</li></ul>
         <div class="prose">
-            <p>I performed COMSOL simulations to study pattern formation and analysed the linear stability of the system to determine whether it reaches an arrested state.</p>
-            <p>Using the simulation results, I measured pattern sizes and compared them with the predictions of the linear stability analysis.</p>
+            <p>When many C. elegans worms share a plate, they gather into groups. Instead of merging into one big cluster, the groups stop growing and settle into a pattern of spots of similar size. This is called arrested phase separation, and I study how it happens with two simulations of the same system.</p>
+            <p>The first is a 3D model in COMSOL that treats the worms and the oxygen around them as continuous fields. Starting from a nearly uniform state, the worms break up into clusters that stop growing and arrange themselves into a regular pattern of spots.</p>
+            <p>The second is a particle simulation in which every worm is an individual that moves, uses up the oxygen around it and responds to it. I wrote it in Python with JAX so it runs on a GPU. The same clustering appears here from the behaviour of individual worms, which lets me check that the pattern in the continuum model really follows from what single worms do.</p>
         </div>
     </article>
+    <div class="gallery two">
+        <figure><video controls muted loop playsinline preload="metadata" poster="../images/sims/arrested_comsol.jpg" src="../videos/sims/arrested_comsol.mp4"></video><figcaption>The COMSOL model: a uniform state breaks up into a regular pattern of spots.</figcaption></figure>
+        <figure><video controls muted loop playsinline preload="metadata" poster="../images/sims/arrested_md.jpg" src="../videos/sims/arrested_md.mp4"></video><figcaption>The particle simulation: individual worms cluster over the oxygen field.</figcaption></figure>
+    </div>
     </main>
     <footer class="site-footer">
         <div class="container">

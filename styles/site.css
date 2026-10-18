@@ -404,3 +404,7 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0; }
 .gallery img[src*="fpga/"],
 .gallery img[src*="web/"] { aspect-ratio: auto; }
 .gallery:has(img[src*="web/"]) { grid-template-columns: 1fr; max-width: 1000px; }
+.gallery figure:has(img[src*="crack_strip"]),
+.gallery figure:has(img[src*="crack_notch"]) { grid-column: 1 / -1; }
+.gallery img[src*="crack_strip"],
+.gallery img[src*="crack_notch"] { aspect-ratio: auto; object-fit: contain; background: #fff; }
