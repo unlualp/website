@@ -3,88 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrested Phase Separation In C. Elegans</title>
-    <link rel="stylesheet" href="../styles/head.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrested Phase Separation in C. elegans · Alp Ünlü</title>
+    <meta name="description" content="COMSOL simulations and linear stability analysis of how patterns form and stop growing.">
+    <link rel="icon" href="../images/atomlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/site.css">
 </head>
 <body>
-    <div class="header">
-
-        <div class="left-side">
-
-                <a href="/" class="home-button">
-                    <img class="atom-logo" src="../images/atomlogo.png">
-                </a>
-
-                <a href="/my-project.html" class="project-button">
-                    Projects
-                </a>
-
-                <a href="/researches.html" class="project-button">
-                    Researches
-                </a>
-
-
+    <header class="site-header">
+        <div class="container">
+            <a href="../index.html" class="brand">
+                <img src="../images/atomlogo.png" alt="">
+                Alp Ünlü
+            </a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button" aria-label="Menu"><span></span><span></span><span></span></label>
+            <nav class="nav">
+                <a href="../my-project.html">Projects</a>
+                <a href="../researches.html" class="active">Research</a>
+                <a href="../index.html#about">About</a>
+            </nav>
         </div>
-
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">&#8801;</label>
-
-        <div class="mobile-bar">
-            <ul>
-                <li><a href="/my-project.html">Projects</a></li>
-                <li><a href="/researches.html">Researches</a></li>
-                <li><a href="/#about-me">About Me</a></li>
-            </ul>
+    </header>
+    <main>
+    <article class="article">
+        <a class="back" href="../researches.html">← All research</a>
+        <span class="eyebrow">Simulation · 2024</span>
+        <h1>Arrested Phase Separation in C. elegans: Pattern formation and stability</h1>
+        <p class="summary">COMSOL simulations and linear stability analysis of how patterns form and stop growing.</p>
+        <ul class="tags"><li>COMSOL</li><li>Linear stability</li><li>Pattern formation</li></ul>
+        <div class="prose">
+            <p>I performed COMSOL simulations to study pattern formation and analysed the linear stability of the system to determine whether it reaches an arrested state.</p>
+            <p>Using the simulation results, I measured pattern sizes and compared them with the predictions of the linear stability analysis.</p>
         </div>
-
-
-        <div class="right-side">
-            <div class="head-info">
-                <a href="/#about-me" class="project-button">
-                    About Me
-                </a>
+    </article>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <strong>Alp Ünlü</strong>
+                <a class="mail" href="mailto:unlu.alp@icloud.com">unlu.alp@icloud.com</a>
             </div>
-        
-
-        </div>
-    </div>
-
-    <div class="main-page">
-        
-        <div class="main-left">
-            <h1>Arrested Phase Seperation In C. Elegans</h1>
-            I performed COMSOL simulations to analyze pattern formation and assessed the system's linear stability to determine whether it reaches an arrested state. 
-            Using the simulation results, I measured pattern sizes and compared these with conclusions from the linear stability analysis.
-            
-        </div>
-
-        <div class="main-right">
-            
-       
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer-class">
-            <div class="image-overlay">
-                <div class="contact">
-                    Alp Ünlü <br> <br>unlu.alp@icloud.com
-                </div>
-                <div class="social-media">
-                    <img class="linkedin-logo" onclick="location.href='https://www.linkedin.com/in/alpunlu/'" src="../images/linkedin-logoo.webp">
-                    <img class="github-logo" onclick="location.href='https://github.com/unlualp'" src="../images/github-logo.svg" alt="GitHub">
-                    <!--<img class="insta-logo" onclick="location.href='https://www.instagram.com/unlu.alp/'" src="../images/insta-logo.png">
-                -->
-    
-                </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/alpunlu/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+                <a href="https://github.com/unlualp" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                <a href="mailto:unlu.alp@icloud.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2 .9v11.6h16V6.4l-8 5.6-8-5.6zM5.3 6h13.4L12 10.7 5.3 6z"/></svg></a>
             </div>
+            <div class="copyright">© 2026 Alp Ünlü</div>
         </div>
-    </div>
-
-
+    </footer>
 </body>
 </html>
