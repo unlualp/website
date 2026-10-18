@@ -381,3 +381,8 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; margin: 0; }
     .grid { grid-template-columns: 1fr; }
     .card-media.placeholder { aspect-ratio: 16 / 6; }
 }
+
+/* Wide vector renders (PCB) sit centred instead of being cropped */
+.card-media img[src$=".svg"] { object-fit: contain; background: #0f3d2a; padding: 18px; }
+.gallery img[src$=".svg"] { background: #0f3d2a; padding: 16px; }
+.gallery:not(.two) figure:only-child { grid-column: 1 / -1; }

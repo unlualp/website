@@ -38,13 +38,15 @@
             <p>In the lab, I built a robot to study how fixed-position bacteria move the fluid around them. We designed it together with a bead system to visualise the flow. The robot has three parts, a body and two arms, connected by servos so that the arms move radially.</p>
             <p>I drove the servos with cosine signals, with one of them offset by a phase angle. At a phase of 0° both arms move in sync and the beads stay still; at 180° there is still no net movement.</p>
             <p>At 90°, however, the beads move in one direction, and at −90° they move in the opposite direction. The phase difference between the strokes is what breaks the symmetry and creates flow.</p>
+            <p>Before building it, I also wrote a small Python simulation of a three-rod swimmer to see how different stroke settings move the body.</p>
         </div>
     </article>
-    <div class="gallery two">
-        <figure><video controls preload="metadata" src="../videos/bpart1.mp4"></video><figcaption>At 90°, the beads move to the left.</figcaption></figure>
-        <figure><video controls preload="metadata" src="../videos/gpart3.mp4"></video><figcaption>At 0°, the beads stay still.</figcaption></figure>
-        <figure><video controls preload="metadata" src="../videos/rpart2.mp4"></video><figcaption>At −90°, the beads move to the right.</figcaption></figure>
-        <figure><video controls preload="metadata" src="../videos/gpart4.mp4"></video><figcaption>At 180°, the beads also stay still.</figcaption></figure>
+    <div class="gallery">
+        <figure><video controls muted loop playsinline preload="metadata" src="../videos/bpart1.mp4"></video><figcaption>At 90°, the beads move to the left.</figcaption></figure>
+        <figure><video controls muted loop playsinline preload="metadata" src="../videos/gpart3.mp4"></video><figcaption>At 0°, the beads stay still.</figcaption></figure>
+        <figure><video controls muted loop playsinline preload="metadata" src="../videos/rpart2.mp4"></video><figcaption>At −90°, the beads move to the right.</figcaption></figure>
+        <figure><video controls muted loop playsinline preload="metadata" src="../videos/gpart4.mp4"></video><figcaption>At 180°, the beads also stay still.</figcaption></figure>
+        <figure><video controls muted loop playsinline preload="metadata" poster="../images/sims/rod_swimmer.jpg" src="../videos/sims/rod_swimmer_2x2.mp4"></video><figcaption>A Python simulation of the three-rod swimmer for four stroke settings.</figcaption></figure>
     </div>
     </main>
     <footer class="site-footer">
