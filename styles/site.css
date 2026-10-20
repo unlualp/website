@@ -484,29 +484,18 @@ html.lightbox-open { overflow: hidden; }
 }
 .gallery img[src*="arrested_v2_v9"] { object-fit: contain; background: #fff; }
 
-/* ---------- Wide galleries (overrides the earlier tile rules) ---------- */
+/* ---------- Wide galleries: same tile structure, larger ---------- */
 .gallery,
 .gallery.two {
     max-width: 1200px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px;
-    align-items: start;
 }
-.gallery figure:only-child,
-.gallery figure:last-child:nth-child(odd) { grid-column: 1 / -1; }
-.gallery figure:only-child img,
-.gallery figure:last-child:nth-child(odd) img { max-height: 820px; width: auto; max-width: 100%; margin: 0 auto; }
-.gallery img,
-.gallery video {
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
-}
+.gallery figure:only-child { grid-column: 1 / -1; }
+.gallery figure:only-child img { max-height: 760px; }
 .gallery:has(img[src*="web/"]),
-.gallery:has(img[src*="fpga/"]) { grid-template-columns: 1fr; max-width: 1200px; }
+.gallery:has(img[src*="fpga/"]) { grid-template-columns: 1fr; }
 @media (max-width: 760px) {
-    .gallery, .gallery.two,
-    .gallery:has(img[src*="web/"]),
-    .gallery:has(img[src*="fpga/"]) { grid-template-columns: 1fr; gap: 20px; }
+    .gallery, .gallery.two { grid-template-columns: 1fr; gap: 20px; }
 }
+.gallery img[src*="hood-shroud-cad"] { object-fit: contain; background: #fff; }
