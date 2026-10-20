@@ -39,13 +39,13 @@
             <p>When many C. elegans worms share a plate, they gather into groups. Instead of merging into one big cluster, the groups stop growing and settle into a pattern of spots of similar size. This is called arrested phase separation, and I study how it happens with two simulations of the same system.</p>
             <p>The first is a 3D model in COMSOL that treats the worms and the oxygen around them as continuous fields. Starting from a nearly uniform state, the worms break up into clusters that stop growing and arrange themselves into a regular pattern of spots.</p>
             <p>The second is a particle simulation in which every worm is an individual that moves, uses up the oxygen around it and responds to it. I wrote it in Python with JAX so it runs on a GPU. The same clustering appears here from the behaviour of individual worms, which lets me check that the pattern in the continuum model really follows from what single worms do.</p>
-            <p>I also record worm plates in the lab. The video below shows worms tracked in one of the recordings.</p>
+            <p>I also record worm plates in the lab. The video below is a timelapse of one of the plates.</p>
         </div>
     </article>
     <div class="gallery">
         <figure><video controls muted loop playsinline preload="metadata" poster="../images/sims/arrested_comsol.jpg" src="../videos/sims/arrested_comsol.mp4"></video><figcaption>The COMSOL model: a uniform state breaks up into a regular pattern of spots.</figcaption></figure>
         <figure><video controls muted loop playsinline preload="metadata" poster="../images/sims/arrested_md.jpg" src="../videos/sims/arrested_md.mp4"></video><figcaption>The particle simulation: individual worms cluster over the oxygen field.</figcaption></figure>
-        <figure><video controls muted loop playsinline preload="metadata" poster="../images/sims/arrested_plate_last15.jpg" src="../videos/sims/arrested_plate_last15.mp4"></video><figcaption>Worms tracked in a plate recording (last 15 seconds).</figcaption></figure>
+        <figure><video controls muted loop playsinline preload="metadata" poster="../images/sims/arrested_plate_last15.jpg" src="../videos/sims/arrested_plate_last15.mp4"></video><figcaption>Timelapse of a worm plate.</figcaption></figure>
     </div>
     </main>
     <footer class="site-footer">
