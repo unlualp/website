@@ -484,18 +484,101 @@ html.lightbox-open { overflow: hidden; }
 }
 .gallery img[src*="arrested_v2_v9"] { object-fit: contain; background: #fff; }
 
-/* ---------- Wide galleries: same tile structure, larger ---------- */
+/* ---------- Galleries: uniform tiles, nothing cropped ---------- */
 .gallery,
 .gallery.two {
     max-width: 1200px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
 }
-.gallery figure:only-child { grid-column: 1 / -1; }
-.gallery figure:only-child img { max-height: 760px; }
-.gallery:has(img[src*="web/"]),
-.gallery:has(img[src*="fpga/"]) { grid-template-columns: 1fr; }
-@media (max-width: 760px) {
-    .gallery, .gallery.two { grid-template-columns: 1fr; gap: 20px; }
+/* 2 or 4 images -> two columns, 1 image -> one large tile */
+.gallery:has(> figure:nth-child(2):last-child),
+.gallery:has(> figure:nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gallery:has(> figure:only-child) { grid-template-columns: minmax(0, 900px); justify-content: center; }
+
+.gallery .tile {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    isolation: isolate;
 }
-.gallery img[src*="hood-shroud-cad"] { object-fit: contain; background: #fff; }
+/* the same picture, blurred, fills the space the image leaves */
+.gallery .tile::before {
+    content: "";
+    position: absolute;
+    inset: -10%;
+    background: var(--img) center / cover no-repeat;
+    filter: blur(26px) saturate(1.15) brightness(0.92);
+    z-index: -1;
+}
+.gallery .tile img {
+    position: relative;
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+.gallery video { aspect-ratio: 4 / 3; object-fit: contain; background: #000; }
+
+/* wide plots and website screenshots keep their own shape, one per row */
+.gallery.gallery:has(img[src*="web/"]),
+.gallery.gallery:has(img[src*="fpga/"]) { grid-template-columns: minmax(0, 1100px); justify-content: center; }
+.gallery:has(img[src*="web/"]) .tile,
+.gallery:has(img[src*="fpga/"]) .tile { aspect-ratio: auto; }
+.gallery:has(img[src*="web/"]) .tile::before,
+.gallery:has(img[src*="fpga/"]) .tile::before { display: none; }
+.gallery:has(img[src*="web/"]) .tile img,
+.gallery:has(img[src*="fpga/"]) .tile img { height: auto !important; }
+
+@media (prefers-color-scheme: dark) {
+    .gallery .tile.has-dark::before { display: none; }
+}
+@media (max-width: 900px) {
+    .gallery, .gallery.two,
+    .gallery:has(> figure:nth-child(2):last-child),
+    .gallery:has(> figure:nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
+@media (max-width: 560px) {
+    .gallery, .gallery.two,
+    .gallery:has(> figure:nth-child(2):last-child),
+    .gallery:has(> figure:nth-child(4):last-child) { grid-template-columns: 1fr; }
+}
+
+/* Renders, plots and diagrams: plain fill in their own background colour, no blur */
+.gallery .tile:has(img[src*="3d/"]),
+.gallery .tile:has(img[src*="hood-shroud-cad"]) { background: #f4f4f2; }
+.gallery .tile:has(img[src*="sims/comsol_spacetime"]),
+.gallery .tile:has(img[src*="sims/comsol_spectrum"]),
+.gallery .tile:has(img[src*="sims/crack_"]),
+.gallery .tile:has(img[src*="board-scan"]),
+.gallery .tile:has(img[src*="circuit"]),
+.gallery .tile:has(img[src*="fpga/"]),
+.gallery .tile:has(img[src*="web/"]) { background: #fff; }
+.gallery .tile:has(img[src$=".svg"]) { background: #0f3d2a; }
+.gallery .tile:has(img[src*="3d/"])::before,
+.gallery .tile:has(img[src*="hood-shroud-cad"])::before,
+.gallery .tile:has(img[src*="sims/comsol_spacetime"])::before,
+.gallery .tile:has(img[src*="sims/comsol_spectrum"])::before,
+.gallery .tile:has(img[src*="sims/crack_"])::before,
+.gallery .tile:has(img[src*="board-scan"])::before,
+.gallery .tile:has(img[src*="circuit"])::before,
+.gallery .tile:has(img[src$=".svg"])::before { display: none; }
+@media (prefers-color-scheme: dark) {
+    .gallery .tile.has-dark:has(img[src*="3d/"]) { background: #1e1e22; }
+    .gallery .tile.has-dark:has(img[src*="fpga/"]) { background: #17171a; }
+}
+/* wide strips span the row at their natural shape */
+.gallery .tile:has(img[src*="crack_strip"]),
+.gallery .tile:has(img[src*="crack_notch"]) { aspect-ratio: auto; }
+.gallery .tile:has(img[src*="crack_strip"]) img,
+.gallery .tile:has(img[src*="crack_notch"]) img { height: auto !important; }
