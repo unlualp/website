@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Lab Infrastructure · Alp Ünlü</title>
-    <meta name="description" content="Three systems I built for the lab this summer: a shared data server, air cooling for the hood and a four-plate stage.">
+    <title>Lab Data Server · Alp Ünlü</title>
+    <meta name="description" content="A shared data server for the lab, rebuilt from a spare desktop tower.">
     <link rel="icon" href="../images/atomlogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,23 +31,17 @@
     <main>
     <article class="article">
         <a class="back" href="../my-project.html">← All projects</a>
-        <span class="eyebrow">Lab hardware · 2026</span>
-        <h1>Building Lab Infrastructure: A data server, hood cooling and a 4-plate stage</h1>
-        <p class="summary">Three systems I built for the lab this summer: a shared data server, air cooling for the hood and a four-plate stage.</p>
-        <ul class="tags"><li>Linux server</li><li>CAD</li><li>Motion stage</li><li>Lab equipment</li></ul>
+        <span class="eyebrow">Lab infrastructure · 2026</span>
+        <h1>Lab Data Server: A shared server from a spare tower</h1>
+        <p class="summary">A shared data server for the lab, rebuilt from a spare desktop tower.</p>
+        <ul class="tags"><li>Linux</li><li>Debian</li><li>OpenMediaVault</li><li>NAS</li></ul>
         <div class="prose">
-            <p>Over the summer I built three pieces of lab infrastructure, all now in daily use.</p>
-            <p>The first is a shared data server made from a spare desktop tower, so no new machine had to be bought. I stripped and rebuilt the case, fitted a 16 TB data drive and set it up with Debian and OpenMediaVault. It runs without a screen or keyboard and gives every computer in the lab one place for microscope images, simulation output and backups.</p>
-            <p>The second keeps the hood enclosure at a stable temperature during experiments. A portable air conditioner sits under the bench, a custom shroud captures its cold air, and ducting carries it up into the hood. I designed the shroud in Fusion 360 first, then built it and sealed it onto the unit, with a window to check the airflow and condensation.</p>
-            <p>The third is a 1D stage that carries four plates along one axis, so four samples can be recorded in one session. The glass above the plates is heated so that it does not fog up with condensation, which keeps the view clear during long recordings.</p>
+            <p>The lab needed one place to keep microscope images, simulation output and backups, reachable from every computer. Instead of buying a new machine, I turned a spare desktop tower into a dedicated server.</p>
+            <p>I stripped and rebuilt the case, re-routed the cables, fitted a system disk and a 16 TB data drive, and set it up with Debian and OpenMediaVault. It runs without a screen or keyboard, is managed entirely over the network, and shares its storage with the Windows, Mac and Linux machines in the lab.</p>
         </div>
     </article>
     <div class="gallery">
-        <figure><img src="../images/lab/server-build.jpg" alt="The lab data server, rebuilt from a spare tower." loading="lazy"><figcaption>The lab data server, rebuilt from a spare tower.</figcaption></figure>
-        <figure><img src="../images/lab/hood-cooling.jpg" alt="The cooling unit under the hood, with ducting up into the enclosure." loading="lazy"><figcaption>The cooling unit under the hood, with ducting up into the enclosure.</figcaption></figure>
-        <figure><img src="../images/lab/hood-shroud-cad.jpg" alt="The shroud designed in Fusion 360." loading="lazy"><figcaption>The shroud designed in Fusion 360.</figcaption></figure>
-        <figure><img src="../images/lab/hood-shroud-built.jpg" alt="The shroud as built, sealed onto the unit." loading="lazy"><figcaption>The shroud as built, sealed onto the unit.</figcaption></figure>
-        <figure><img src="../images/lab/four-plate-stage.jpg" alt="The four-plate 1D stage on the optical table." loading="lazy"><figcaption>The four-plate 1D stage on the optical table.</figcaption></figure>
+        <figure><img src="../images/lab/server-build.jpg" alt="The server, rebuilt on the bench from a spare tower." loading="lazy"><figcaption>The server, rebuilt on the bench from a spare tower.</figcaption></figure>
     </div>
     </main>
     <footer class="site-footer">
