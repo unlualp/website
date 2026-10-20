@@ -482,3 +482,4 @@ html.lightbox-open { overflow: hidden; }
     .lightbox-figure { padding: 64px 12px 20px; }
     .lightbox-prev, .lightbox-next { top: auto; bottom: 18px; transform: none; }
 }
+.gallery img[src*="arrested_v2_v9"] { object-fit: contain; background: #fff; }
